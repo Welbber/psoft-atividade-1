@@ -10,7 +10,7 @@ public class ProductFacade {
 
     private ProductService productService;
 
-    public int addNewProduct(String name, String factory, Double price){
+    public int addProduct(String name, String factory, Double price){
         Product product = new Product(name, factory, price);
         return this.productService.save(product);
     }

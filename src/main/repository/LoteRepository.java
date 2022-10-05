@@ -29,4 +29,6 @@ public class LoteRepository {
     public List<Lote> findAll(){
         return this.lotes;
     }
+
+
 }

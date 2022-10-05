@@ -29,4 +29,14 @@ public class ProductRepository {
     public List<Product> findAll(){
         return this.listProduct;
     }
+
+    public Product findById(Integer id){
+        try{
+            return this.listProduct.get(id);
+        }catch (NullPointerException e){
+            // evoluir posteriormente tratamento
+            System.err.println("Produto não encontrado");
+            return null;
+        }
+    }
 }
